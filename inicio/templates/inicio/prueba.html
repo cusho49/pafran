@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block title_head %}
+<title>Lanzamientos</title>
+{% endblock title_head %}
+
+{% block h1_header %}
+Últimos lanzamientos
+{% endblock h1_header %}
+
+{% block contenido %}
+<h3>Todos los lanzamientos de Facundo Noselli</h3>
+{% comment %} {% if segundo_redondo %}
+<p style='color: yellow;'>{{segundos}}</p> 
+{% elif segundo_par %}
+<p style='color: red;'>{{segundos}}</p>
+{% else %}
+<p style='color: green;'>{{segundos}}</p>
+{% endif %}
+
+{% for numero in listado_de_numeros %}
+<p style='color: blue;'>{{numero}}</p>
+{% endfor %} {% endcomment %}
+<div style="background-color: #7df0ff; padding: 20px;">
+    <h2>Primer Lanzamiento</h2>
+    <p>Musica de Cuarentena - Facundo Noselli</p>
+    <button onclick="window.location.href='https://open.spotify.com/track/2Gq7Xne2KeW6kaEFFPCQvL?si=f7b39f6ccdec4468'">Reproducir</button>
+</div>
+<div style="background-color: #c885ff; padding: 20px;">
+    <h2>Recomendado</h2>
+    <p>I feel it coming X Sin señal - Facundo Noselli</p>
+    <button onclick="window.location.href='https://youtu.be/vXuCCOtuNDY'">Reproducir</button>
+</div>
+{% endblock contenido %}
